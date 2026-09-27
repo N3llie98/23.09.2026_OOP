@@ -16,9 +16,24 @@ class Laptop
 	double price;
 public:
 	Laptop();
-	Laptop(CPU _cpu, string _brand, double price);
+	Laptop(CPU _cpu, GPU _gpu, RAM _ram, SSD _ssd, string _brand, double _price);
 
 	//METHODS
 	void printInfo();
+
+	//GETTERS
+	CPU getCpu();
+	GPU getGpu();
+	RAM getRam();
+	SSD getSsd();
+	string getBrand();
+	double getPrice();
+	//SETTERS
+	void setCpu(CPU _cpu);
+	void setGpu(GPU _gpu);
+	void setRam(RAM _ram);
+	void setSsd(SSD _ssd);
+	void setBrand(string _brand);
+	void setPrice(double _price);
 };
 
