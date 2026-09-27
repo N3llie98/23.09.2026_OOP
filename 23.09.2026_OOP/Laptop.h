@@ -9,12 +9,16 @@ using namespace std;
 class Laptop
 {
 	CPU cpu;
+	GPU gpu;
+	RAM ram;
+	SSD ssd;
 	string brand;
 	double price;
 public:
 	Laptop();
 	Laptop(CPU _cpu, string _brand, double price);
 
+	//METHODS
 	void printInfo();
 };
 

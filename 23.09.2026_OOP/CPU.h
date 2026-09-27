@@ -11,14 +11,16 @@ public:
 	CPU();
 	CPU(string model, int cores, double price);
 
+	//METHODS
 	void printInfo();
 
-	void setModel(string model);
-	void setCores(int cores);
-	void setPrice(double price);
-
+	//GETTERS
 	string getModel();
 	int getCores();
 	double getPrice();
+	//SETTERS
+	void setModel(string model);
+	void setCores(int cores);
+	void setPrice(double price);
 };
 
